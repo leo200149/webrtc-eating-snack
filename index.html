@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEBRTC貪食蛇</title>
+        <style>
+            #keyInput {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <canvas id="board" width="1000px" height="500px" style="background:#262661"></canvas>
+        </div>
+        <div>
+            <div>
+                <button id="hostBtn">HOST</button>
+                <button id="addClientBtn" style="display: none;">ADD CLIENT</button>
+                <button id="startBtn" style="display: none;">Start</button>
+                <button id="clientBtn">CLIENT</button>
+            </div>
+            <div>
+                <input type="text" id="keyInput" placeholder="key">
+            </div>
+            <div>
+                <div id="connectResult"></div>
+            </div>
+        </div>
+    </body>
+    <script src="simplepeer.min.js"></script>
+    <script src="connect.js"></script>
+    <script src="app.js"></script>
+</html>
